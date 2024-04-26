@@ -14,6 +14,7 @@
 		C937E6342BD77176004C1E44 /* celebrities_lookalikeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C937E6332BD77176004C1E44 /* celebrities_lookalikeTests.swift */; };
 		C937E63E2BD77176004C1E44 /* celebrities_lookalikeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C937E63D2BD77176004C1E44 /* celebrities_lookalikeUITests.swift */; };
 		C937E6402BD77176004C1E44 /* celebrities_lookalikeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C937E63F2BD77176004C1E44 /* celebrities_lookalikeUITestsLaunchTests.swift */; };
+		C9AC8CC62BDB61F100B3E39A /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AC8CC52BDB61F100B3E39A /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		C937E6392BD77176004C1E44 /* celebrities-lookalikeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "celebrities-lookalikeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C937E63D2BD77176004C1E44 /* celebrities_lookalikeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = celebrities_lookalikeUITests.swift; sourceTree = "<group>"; };
 		C937E63F2BD77176004C1E44 /* celebrities_lookalikeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = celebrities_lookalikeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C981C07B2BDB55E8003BADAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9AC8CC52BDB61F100B3E39A /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,8 @@
 		C937E6212BD77175004C1E44 /* celebrities-lookalike */ = {
 			isa = PBXGroup;
 			children = (
+				C9AC8CC42BDB61E700B3E39A /* Utilities */,
+				C981C07B2BDB55E8003BADAD /* Info.plist */,
 				C937E6222BD77175004C1E44 /* celebrities_lookalikeApp.swift */,
 				C937E6242BD77175004C1E44 /* ContentView.swift */,
 				C937E6262BD77176004C1E44 /* Assets.xcassets */,
@@ -125,6 +130,14 @@
 				C937E63F2BD77176004C1E44 /* celebrities_lookalikeUITestsLaunchTests.swift */,
 			);
 			path = "celebrities-lookalikeUITests";
+			sourceTree = "<group>";
+		};
+		C9AC8CC42BDB61E700B3E39A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C9AC8CC52BDB61F100B3E39A /* ImagePicker.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9AC8CC62BDB61F100B3E39A /* ImagePicker.swift in Sources */,
 				C937E6252BD77175004C1E44 /* ContentView.swift in Sources */,
 				C937E6232BD77175004C1E44 /* celebrities_lookalikeApp.swift in Sources */,
 			);
@@ -425,6 +439,8 @@
 				DEVELOPMENT_TEAM = 6R3F5G5AGC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "celebrities-lookalike/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This \b\bapp uses the camera only as a \bway of input and does not save any pho\b\b\bto taken \b";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +470,8 @@
 				DEVELOPMENT_TEAM = 6R3F5G5AGC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "celebrities-lookalike/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This \b\bapp uses the camera only as a \bway of input and does not save any pho\b\b\bto taken \b";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
