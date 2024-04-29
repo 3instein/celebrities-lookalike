@@ -16,6 +16,8 @@
 		C937E6402BD77176004C1E44 /* celebrities_lookalikeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C937E63F2BD77176004C1E44 /* celebrities_lookalikeUITestsLaunchTests.swift */; };
 		C9AC8CC62BDB61F100B3E39A /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AC8CC52BDB61F100B3E39A /* ImagePicker.swift */; };
 		C9AC8CC82BDF351300B3E39A /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AC8CC72BDF351300B3E39A /* API.swift */; };
+		C9AC8CCC2BDF3D2800B3E39A /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AC8CCB2BDF3D2800B3E39A /* LoadingView.swift */; };
+		C9AC8CCE2BDF426800B3E39A /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AC8CCD2BDF426800B3E39A /* ResultView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		C981C07B2BDB55E8003BADAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9AC8CC52BDB61F100B3E39A /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		C9AC8CC72BDF351300B3E39A /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		C9AC8CCB2BDF3D2800B3E39A /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		C9AC8CCD2BDF426800B3E39A /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				C981C07B2BDB55E8003BADAD /* Info.plist */,
 				C937E6222BD77175004C1E44 /* celebrities_lookalikeApp.swift */,
 				C937E6242BD77175004C1E44 /* ContentView.swift */,
+				C9AC8CCB2BDF3D2800B3E39A /* LoadingView.swift */,
+				C9AC8CCD2BDF426800B3E39A /* ResultView.swift */,
 				C937E6262BD77176004C1E44 /* Assets.xcassets */,
 				C937E6282BD77176004C1E44 /* Preview Content */,
 			);
@@ -276,7 +282,9 @@
 				C9AC8CC62BDB61F100B3E39A /* ImagePicker.swift in Sources */,
 				C937E6252BD77175004C1E44 /* ContentView.swift in Sources */,
 				C9AC8CC82BDF351300B3E39A /* API.swift in Sources */,
+				C9AC8CCC2BDF3D2800B3E39A /* LoadingView.swift in Sources */,
 				C937E6232BD77175004C1E44 /* celebrities_lookalikeApp.swift in Sources */,
+				C9AC8CCE2BDF426800B3E39A /* ResultView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
