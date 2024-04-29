@@ -15,6 +15,7 @@
 		C937E63E2BD77176004C1E44 /* celebrities_lookalikeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C937E63D2BD77176004C1E44 /* celebrities_lookalikeUITests.swift */; };
 		C937E6402BD77176004C1E44 /* celebrities_lookalikeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C937E63F2BD77176004C1E44 /* celebrities_lookalikeUITestsLaunchTests.swift */; };
 		C9AC8CC62BDB61F100B3E39A /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AC8CC52BDB61F100B3E39A /* ImagePicker.swift */; };
+		C9AC8CC82BDF351300B3E39A /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AC8CC72BDF351300B3E39A /* API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		C937E63F2BD77176004C1E44 /* celebrities_lookalikeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = celebrities_lookalikeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C981C07B2BDB55E8003BADAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9AC8CC52BDB61F100B3E39A /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		C9AC8CC72BDF351300B3E39A /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				C9AC8CC52BDB61F100B3E39A /* ImagePicker.swift */,
+				C9AC8CC72BDF351300B3E39A /* API.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			files = (
 				C9AC8CC62BDB61F100B3E39A /* ImagePicker.swift in Sources */,
 				C937E6252BD77175004C1E44 /* ContentView.swift in Sources */,
+				C9AC8CC82BDF351300B3E39A /* API.swift in Sources */,
 				C937E6232BD77175004C1E44 /* celebrities_lookalikeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

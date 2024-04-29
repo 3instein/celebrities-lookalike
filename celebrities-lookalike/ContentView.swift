@@ -22,7 +22,7 @@ struct ContentView: View {
                 .overlay(Rectangle().stroke(Color.black, lineWidth: 2))
 
             HStack {
-                Spacer().frame(width: 75)
+                Spacer().frame(width: image != nil ? 75 : 0)
                 
                 Button(action: {
                     ImagePicker.checkPermissionsAndOpenCamera(showCamera: showCamera) { success in
@@ -39,10 +39,16 @@ struct ContentView: View {
                     ImagePicker(image: self.$image, showCamera: self.$showCamera)
                 }
                 
-                Image(systemName: "photo")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 50, height: 50)
+                if(image != nil) {
+                    Button(action: {
+                        identify(image: (image ?? UIImage(systemName: "logo"))!)
+                    }) {
+                        Image(systemName: "arrow.right")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 75, height: 75)
+                    }
+                }
             }
 
         }
