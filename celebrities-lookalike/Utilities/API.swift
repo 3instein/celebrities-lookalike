@@ -7,11 +7,14 @@
 
 import SwiftUI
 
-let BASE_URL = URL(string:"https://bc1e-139-228-45-215.ngrok-free.app/identify")
+let BASE_URL = "https://bc1e-139-228-45-215.ngrok-free.app/"
 
-func identify(image: UIImage) {
+func identify(image: UIImage, completion: @escaping ([[String: String]]?, Error?) -> Void) {
     // Prepare the request
-    var request = URLRequest(url: BASE_URL!)
+    
+    let identifyURL = URL(string: (BASE_URL + "identify"))
+    
+    var request = URLRequest(url: identifyURL!)
     request.httpMethod = "POST"
 
     // Create a boundary for the multipart form-data
@@ -27,7 +30,7 @@ func identify(image: UIImage) {
     if let imageData = image.jpegData(compressionQuality: 0.8) {
         body.append(imageData)
     } else {
-        print("Failed to convert image to data")
+        completion(nil, NSError(domain: "com.yourapp", code: 0, userInfo: [NSLocalizedDescriptionKey: "Failed to convert image to data"]))
         return
     }
 
@@ -44,26 +47,39 @@ func identify(image: UIImage) {
     // Perform the request
     let task = URLSession.shared.dataTask(with: request) { data, response, error in
         guard let data = data, error == nil else {
-            print("Error: \(error?.localizedDescription ?? "Unknown error")")
+            completion(nil, error)
             return
         }
 
         // Print the response
         if let httpResponse = response as? HTTPURLResponse {
             if httpResponse.statusCode == 200 {
-                if let json = try? JSONSerialization.jsonObject(with: data, options: []),
-                   let jsonData = try? JSONSerialization.data(withJSONObject: json, options: .prettyPrinted),
-                   let jsonString = String(data: jsonData, encoding: .utf8) {
-                    print(jsonString)
-                } else {
-                    print("Invalid JSON response")
+                do {
+                    // Parse JSON data
+                    if let json = try JSONSerialization.jsonObject(with: data) as? [[String: Any]] {
+                        // Map JSON to an array of dictionaries containing name, image path, and distance
+                        let result = json.map { dictionary -> [String: String] in
+                            return [
+                                "name": dictionary["name"] as? String ?? "",
+                                "image_path": dictionary["image_path"] as? String ?? "",
+                                "distance": "\(dictionary["distance"] ?? "")"
+                            ]
+                        }
+                        // Return the result
+                        completion(result, nil)
+                    } else {
+                        completion(nil, NSError(domain: "com.yourapp", code: 0, userInfo: [NSLocalizedDescriptionKey: "Invalid JSON response"]))
+                    }
+                } catch {
+                    completion(nil, error)
                 }
             } else {
-                print("Error response: \(httpResponse.statusCode)")
+                completion(nil, NSError(domain: "com.yourapp", code: httpResponse.statusCode, userInfo: nil))
             }
         }
     }
 
     task.resume()
 }
+
 
