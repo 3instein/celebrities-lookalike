@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C909F3982BE08CDF008A09DE /* Kavoon-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C909F3972BE08CDF008A09DE /* Kavoon-Regular.ttf */; };
 		C937E6232BD77175004C1E44 /* celebrities_lookalikeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C937E6222BD77175004C1E44 /* celebrities_lookalikeApp.swift */; };
 		C937E6252BD77175004C1E44 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C937E6242BD77175004C1E44 /* ContentView.swift */; };
 		C937E6272BD77176004C1E44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C937E6262BD77176004C1E44 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C909F3972BE08CDF008A09DE /* Kavoon-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kavoon-Regular.ttf"; sourceTree = "<group>"; };
 		C937E61F2BD77175004C1E44 /* celebrities-lookalike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "celebrities-lookalike.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C937E6222BD77175004C1E44 /* celebrities_lookalikeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = celebrities_lookalikeApp.swift; sourceTree = "<group>"; };
 		C937E6242BD77175004C1E44 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 		C937E6212BD77175004C1E44 /* celebrities-lookalike */ = {
 			isa = PBXGroup;
 			children = (
+				C909F3972BE08CDF008A09DE /* Kavoon-Regular.ttf */,
 				C9AC8CC42BDB61E700B3E39A /* Utilities */,
 				C981C07B2BDB55E8003BADAD /* Info.plist */,
 				C937E6222BD77175004C1E44 /* celebrities_lookalikeApp.swift */,
@@ -254,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C937E62A2BD77176004C1E44 /* Preview Assets.xcassets in Resources */,
+				C909F3982BE08CDF008A09DE /* Kavoon-Regular.ttf in Resources */,
 				C937E6272BD77176004C1E44 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,7 +461,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -488,7 +492,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
