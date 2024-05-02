@@ -22,12 +22,22 @@ struct ContentView: View {
             if (identificationResult == nil){
                 NavigationView {
                     VStack {
+                        Text("Celebrities").font(.custom("Kavoon-Regular", size: 36)).foregroundStyle(.red)
                         Image(uiImage: image ?? UIImage(named: "Logo")!)
                             .resizable()
                             .aspectRatio(contentMode: image != nil ? .fill : .fit) // Adjust content mode based on whether image is set
                             .frame(width: 300, height: 300)
-                            .clipShape(Rectangle())
-                            .overlay(Rectangle().stroke(Color.black, lineWidth: 2))
+                            .clipShape(Circle())
+                            .overlay(Circle().stroke(Color.black, lineWidth: 4))
+                        Text("Look")
+                            .font(.custom("Kavoon-Regular", size: 36))
+                            .foregroundColor(.green)
+                        + Text("-")
+                            .font(.custom("Kavoon-Regular", size: 36))
+                            .foregroundColor(.red)
+                        + Text("alike")
+                            .font(.custom("Kavoon-Regular", size: 36))
+                            .foregroundColor(.blue)
                         
                         HStack {
                             Spacer().frame(width: image != nil ? 75 : 0)
@@ -43,6 +53,7 @@ struct ContentView: View {
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 75, height: 75)
+                                    .foregroundStyle(.black)
                             }.sheet(isPresented: $showCamera) {
                                 ImagePicker(image: self.$image, showCamera: self.$showCamera)
                             }
@@ -66,7 +77,8 @@ struct ContentView: View {
                                     Image(systemName: "arrow.right")
                                         .resizable()
                                         .aspectRatio(contentMode: .fit)
-                                        .frame(width: 75, height: 75)
+                                        .frame(width: 50, height: 50)
+                                        .foregroundStyle(.red)
                                 }
                             }
                         }
