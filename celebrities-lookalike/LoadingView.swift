@@ -18,7 +18,7 @@ struct LoadingView: View {
                     .aspectRatio(contentMode: .fit) // Adjust content mode based on whether image is set
                     .frame(width: 300, height: 300)
                     .clipShape(Circle())
-                    .overlay(Circle().stroke(Color.black, lineWidth: 2))
+                    .overlay(Circle().stroke(Color.black, lineWidth: 4))
                     .rotationEffect(.degrees(rotation))
                     .animation(Animation.linear(duration: 5).repeatForever(autoreverses: false))
                     .onAppear {
@@ -26,7 +26,7 @@ struct LoadingView: View {
                     }
             }
             Text("Analyzing...")
-                .font(.title)
+                .font(.custom("Kavoon-Regular", size: 36))
                 .padding()
         }
     }
